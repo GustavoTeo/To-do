@@ -95,7 +95,7 @@ app.delete('/todos/:id', checkExistsUserAccount, (request, response) => {
 
    user.todos.splice(modifyTodo, 1)
 
-    return response.status(200).send(user);
+    return response.status(204).send(user);
 })
 
 
